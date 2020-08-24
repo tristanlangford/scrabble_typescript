@@ -1,5 +1,5 @@
 function scrabbleScore(word: string) {
-    return 1
+    return word === 'a' ? 1 : 2
 }
 
 module.exports = scrabbleScore

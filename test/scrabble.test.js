@@ -6,4 +6,8 @@ describe('scrabbleScore', function() {
         expect(scrabbleScore('a')).toEqual(1)
     })
 
+    test('d returns 2', function() {
+        expect(scrabbleScore('d')).toEqual(2)
+    })
+
 })
