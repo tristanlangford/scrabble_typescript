@@ -10,4 +10,8 @@ describe('scrabbleScore', function() {
         expect(scrabbleScore('d')).toEqual(2)
     })
 
+    test('b returns 3', function() {
+        expect(scrabbleScore('b')).toEqual(3)
+    })
+
 })
