@@ -18,4 +18,8 @@ describe('scrabbleScore', function() {
         expect(scrabbleScore('bbb')).toEqual(9)
     })
 
+    test('returns 0 when not given letter', function() {
+        expect(scrabbleScore('/.;')).toEqual(0)
+    })
+
 })
