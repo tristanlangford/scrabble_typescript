@@ -14,4 +14,8 @@ describe('scrabbleScore', function() {
         expect(scrabbleScore('b')).toEqual(3)
     })
 
+    test('bbb returns 9', function() {
+        expect(scrabbleScore('bbb')).toEqual(9)
+    })
+
 })

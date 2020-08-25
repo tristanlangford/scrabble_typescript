@@ -1,7 +1,17 @@
+let finalScore: number
+
 function scrabbleScore(word: string) {
+    finalScore = 0
+    for(let x = 0; x < word.length; x++) {
+        getScore(word[x])
+    }
+    return finalScore
+}
+
+function getScore(letter: string) {
     for(let i = 0; i < scores.length; i++) {
-        if (scores[i].letters.includes(word.toUpperCase())) {
-            return scores[i].score
+        if (scores[i].letters.includes(letter.toUpperCase())) {
+            finalScore += scores[i].score
         }
     }
 }

@@ -1,8 +1,16 @@
 "use strict";
+var finalScore;
 function scrabbleScore(word) {
+    finalScore = 0;
+    for (var x = 0; x < word.length; x++) {
+        getScore(word[x]);
+    }
+    return finalScore;
+}
+function getScore(letter) {
     for (var i = 0; i < scores.length; i++) {
-        if (scores[i].letters.includes(word.toUpperCase())) {
-            return scores[i].score;
+        if (scores[i].letters.includes(letter.toUpperCase())) {
+            finalScore += scores[i].score;
         }
     }
 }
